@@ -1,0 +1,208 @@
+{
+  "name": "lm-v1-m4pro",
+  "model": "lm-v1 (merged LoRA checkpoint, not released)",
+  "revision": null,
+  "git": "7a50532",
+  "limit": 200,
+  "date": "2026-11-26 23:18",
+  "results": {
+    "diacritics": {
+      "lexicon:auto": {
+        "precision": 0.9495,
+        "recall": 0.5606,
+        "f0.5": 0.8339,
+        "false_positive_rate": 0.0063,
+        "sentence_accuracy": 0.14,
+        "twin_accuracy": 0.24,
+        "counts": {
+          "tp": 527,
+          "fp": 28,
+          "fn": 413,
+          "correct_words": 3174,
+          "twins": 400,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 1.9,
+          "p95_ms": 11.3,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lexicon:all": {
+        "precision": 0.8829,
+        "recall": 0.5777,
+        "f0.5": 0.7985,
+        "false_positive_rate": 0.01859,
+        "sentence_accuracy": 0.12,
+        "twin_accuracy": 0.24,
+        "counts": {
+          "tp": 543,
+          "fp": 72,
+          "fn": 397,
+          "correct_words": 3174,
+          "twins": 400,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 1.9,
+          "p95_ms": 11.3,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lm:auto": {
+        "precision": 0.9533,
+        "recall": 0.6298,
+        "f0.5": 0.8645,
+        "false_positive_rate": 0.00662,
+        "sentence_accuracy": 0.25,
+        "twin_accuracy": 0.4,
+        "counts": {
+          "tp": 592,
+          "fp": 29,
+          "fn": 348,
+          "correct_words": 3174,
+          "twins": 400,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 231.8,
+          "p95_ms": 941.5,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lm:all": {
+        "precision": 0.9051,
+        "recall": 0.7809,
+        "f0.5": 0.8772,
+        "false_positive_rate": 0.02016,
+        "sentence_accuracy": 0.375,
+        "twin_accuracy": 0.705,
+        "counts": {
+          "tp": 734,
+          "fp": 77,
+          "fn": 206,
+          "correct_words": 3174,
+          "twins": 400,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 231.8,
+          "p95_ms": 941.5,
+          "n": 200
+        },
+        "n": 200
+      }
+    },
+    "twins": {
+      "lexicon:auto": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f0.5": 0.0,
+        "false_positive_rate": 0.00604,
+        "sentence_accuracy": 0.0,
+        "twin_accuracy": 0.138,
+        "counts": {
+          "tp": 0,
+          "fp": 22,
+          "fn": 606,
+          "correct_words": 3644,
+          "twins": 703,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 1.7,
+          "p95_ms": 10.3,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lexicon:all": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f0.5": 0.0,
+        "false_positive_rate": 0.01921,
+        "sentence_accuracy": 0.0,
+        "twin_accuracy": 0.138,
+        "counts": {
+          "tp": 0,
+          "fp": 70,
+          "fn": 606,
+          "correct_words": 3644,
+          "twins": 703,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 1.7,
+          "p95_ms": 10.3,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lm:auto": {
+        "precision": 0.6857,
+        "recall": 0.0792,
+        "f0.5": 0.2709,
+        "false_positive_rate": 0.00604,
+        "sentence_accuracy": 0.095,
+        "twin_accuracy": 0.2063,
+        "counts": {
+          "tp": 48,
+          "fp": 22,
+          "fn": 558,
+          "correct_words": 3644,
+          "twins": 703,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 458.4,
+          "p95_ms": 1297.6,
+          "n": 200
+        },
+        "n": 200
+      },
+      "lm:all": {
+        "precision": 0.7651,
+        "recall": 0.3762,
+        "f0.5": 0.634,
+        "false_positive_rate": 0.01921,
+        "sentence_accuracy": 0.26,
+        "twin_accuracy": 0.4623,
+        "counts": {
+          "tp": 228,
+          "fp": 70,
+          "fn": 378,
+          "correct_words": 3644,
+          "twins": 703,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 458.4,
+          "p95_ms": 1297.6,
+          "n": 200
+        },
+        "n": 200
+      }
+    },
+    "predict": {
+      "lm": {
+        "next_word_top1": 0.28,
+        "next_word_top3": 0.42,
+        "completion_top3_after_2": 0.2712,
+        "in_lexicon_rate": 0.765,
+        "in_lexicon_next_word_top3": 0.5229,
+        "in_lexicon_completion_top3_after_2": 0.4384,
+        "latency": {
+          "p50_ms": 569.9,
+          "p95_ms": 4192.8,
+          "n": 318
+        },
+        "n": 200
+      }
+    }
+  },
+  "device": "mps",
+  "load_seconds": 5.4
+}

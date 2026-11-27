@@ -1,0 +1,19 @@
+{
+  "pairs": 2819,
+  "shaj": {
+    "texts": 11874,
+    "plain": 13653,
+    "diacritic": 788,
+    "omission_rate": 0.9454,
+    "texts_with_table_word": 5429,
+    "share_texts_all_plain": 0.9493
+  },
+  "t1_wikipedia": {
+    "texts": 1000,
+    "plain": 81,
+    "diacritic": 3389,
+    "omission_rate": 0.0233,
+    "texts_with_table_word": 940,
+    "share_texts_all_plain": 0.0064
+  }
+}

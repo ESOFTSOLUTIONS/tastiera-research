@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tastiera.al/schemas/correction-record.json",
+  "title": "Correction record",
+  "type": "object",
+  "required": ["input", "target", "errors", "dialect", "source", "license"],
+  "properties": {
+    "input": { "type": "string" },
+    "target": { "type": "string" },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "original", "correction"],
+        "properties": {
+          "type": {
+            "enum": ["missing_diacritic", "typo", "deletion", "doubling", "final_vowel", "agreement", "verb_form", "morphology", "style"]
+          },
+          "original": { "type": "string" },
+          "correction": { "type": "string" }
+        }
+      }
+    },
+    "dialect": { "enum": ["standard", "geg", "tosk", "informal"] },
+    "source": { "type": "string", "description": "synthetic | wikipedia | manual | <dataset id>" },
+    "license": { "type": "string", "description": "SPDX id of the source text" },
+    "reviewed": { "type": "boolean", "default": false }
+  }
+}

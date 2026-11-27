@@ -1,0 +1,106 @@
+{
+  "name": "lm-v1-joint",
+  "model": "/runs/lm-v1/merged",
+  "revision": null,
+  "twin_strategy": "joint",
+  "git": "ebb4401",
+  "limit": 1000,
+  "date": "2026-11-27 10:56",
+  "results": {
+    "diacritics": {
+      "lm:auto": {
+        "precision": 0.9595,
+        "recall": 0.7366,
+        "f0.5": 0.9047,
+        "false_positive_rate": 0.00727,
+        "sentence_accuracy": 0.327,
+        "twin_accuracy": 0.6201,
+        "counts": {
+          "tp": 3506,
+          "fp": 148,
+          "fn": 1254,
+          "correct_words": 15678,
+          "twins": 2011,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 117.9,
+          "p95_ms": 1122.8,
+          "n": 1000
+        },
+        "n": 1000
+      },
+      "lm:all": {
+        "precision": 0.9066,
+        "recall": 0.8968,
+        "f0.5": 0.9046,
+        "false_positive_rate": 0.02462,
+        "sentence_accuracy": 0.505,
+        "twin_accuracy": 0.9309,
+        "counts": {
+          "tp": 4269,
+          "fp": 440,
+          "fn": 491,
+          "correct_words": 15678,
+          "twins": 2011,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 117.9,
+          "p95_ms": 1122.8,
+          "n": 1000
+        },
+        "n": 1000
+      }
+    },
+    "twins": {
+      "lm:auto": {
+        "precision": 0.9163,
+        "recall": 0.4209,
+        "f0.5": 0.7417,
+        "false_positive_rate": 0.00619,
+        "sentence_accuracy": 0.214,
+        "twin_accuracy": 0.4975,
+        "counts": {
+          "tp": 1237,
+          "fp": 113,
+          "fn": 1702,
+          "correct_words": 18257,
+          "twins": 3403,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 251.4,
+          "p95_ms": 1678.9,
+          "n": 1000
+        },
+        "n": 1000
+      },
+      "lm:all": {
+        "precision": 0.8761,
+        "recall": 0.8588,
+        "f0.5": 0.8726,
+        "false_positive_rate": 0.01955,
+        "sentence_accuracy": 0.633,
+        "twin_accuracy": 0.8707,
+        "counts": {
+          "tp": 2524,
+          "fp": 357,
+          "fn": 415,
+          "correct_words": 18257,
+          "twins": 3403,
+          "misaligned": 0
+        },
+        "latency": {
+          "p50_ms": 251.4,
+          "p95_ms": 1678.9,
+          "n": 1000
+        },
+        "n": 1000
+      }
+    }
+  },
+  "device": "cuda",
+  "load_seconds": 9.7,
+  "runner": "modal:L4"
+}

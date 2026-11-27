@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+dictionary/sources/
+ml/eval/results/
+ml/runs/
+
+# Correction pipeline: kept locally, not published
+services/ai/

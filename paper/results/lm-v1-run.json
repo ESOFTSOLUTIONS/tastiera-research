@@ -1,0 +1,70 @@
+{
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "base_revision": null,
+  "data": "esoftal/sq-corpus@v1",
+  "data_sizes": {
+    "train": {
+      "rows": 328443,
+      "words": 23305597,
+      "tokens": 58924434,
+      "chars": 145780778,
+      "blocks": 57374,
+      "tokens_per_word": 2.5283
+    },
+    "validation": {
+      "rows": 3317,
+      "words": 236951,
+      "tokens": 598598,
+      "chars": 1478653,
+      "blocks": 583,
+      "tokens_per_word": 2.5263
+    }
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "targets": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "trainable_params": 17432576,
+  "total_params": 1738007552,
+  "hyper": {
+    "block": 1024,
+    "epochs": 1.0,
+    "max_steps": -1,
+    "lr": 0.0002,
+    "schedule": "cosine, 3% warm-up",
+    "per_device_batch": 4,
+    "grad_accum": 8,
+    "precision": "bf16",
+    "seed": 42
+  },
+  "env": {
+    "device": "cuda",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1",
+    "python": "3.12.10",
+    "git": ""
+  },
+  "base_eval": {
+    "loss": 2.7879464626312256,
+    "ppl_token": 16.247620424395624,
+    "bpc": 1.6282757740172058
+  },
+  "train_seconds": 8059,
+  "final_eval": {
+    "loss": 2.025038480758667,
+    "ppl_token": 7.5764024847430465,
+    "bpc": 1.1827060325111045
+  },
+  "merged": "/runs/lm-v1/merged"
+}
